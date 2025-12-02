@@ -1,45 +1,32 @@
-// Boolean
+// Object
 
-const isTall = true;
-const canCook = true;
-const hasSiblings = true;
+const person = {
+    name: 'Jomma',
+    age: 26,
+    birthday: 2003,
+    isEmployed: true
+};
+console.log(person.name + ' lahir pada tahun ' + person['birthday']);
 
-// Conditional Statements
+// Array
 
-const isSoldOut = false;
-if (isSoldOut) {
-  console.log("Produk sudah habis");
+const usernames = [
+    'Yandy',
+    'Dimas',
+    'Mita'
+];
+console.log('Ada total ' + usernames.length + ' username');
+
+const newUsername = 'Yawi';
+if (usernames.includes(newUsername)) {
+    console.log('Username sudah digunakan');
 } else {
-  console.log("Produk masih tersedia");
+    console.log('Username tersedia');
 }
 
-if (2 !== 1) {
-    console.log('Benar')
-} else {
-    console.log('Salah')
-}
-
-// comparison operators
-
-console.log(10 > 5); // Besar dari
-console.log(8 < 4); // Kecil dari
-console.log(-1 >= 2); // Besar dari atau sama dengan
-console.log(0.5 <= 0); // Kecil dari atau sama dengan
-console.log('abc' === 'abc'); // Sama dengan
-console.log(false !== true); // Tidak sama dengan
-console.log('   ')
-console.log('cab' === 'cba');
-console.log(false !== false);
-console.log('   ');
-// else if statement
-
-const value = 52562;
-if (value < 10) {
-    console.log('Satuan');
-} else if (value < 100) {
-    console.log('Puluhan');
-} else if (value < 1000) {
-    console.log('Ratusan')
-} else {
-    console.log(value);
-}
+const favoriteFood = [
+    'Martabak',
+    'Mie ayam',
+    'Pizza'
+];
+console.log('Makanana favoritku yang kedua adalah ' + favoriteFood[1]);
