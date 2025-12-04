@@ -1,32 +1,64 @@
-// Object
+// Null & Undefined
 
-const person = {
-    name: 'Jomma',
-    age: 26,
-    birthday: 2003,
-    isEmployed: true
+const shoe = 'Converse';
+const bike = 'Phoenix';
+const motorcycle = 'Honda';
+const car = 'Carling';
+const ship = null;
+const airplane = null;
+
+//Functions
+
+function sayMyName() {
+    console.log('Jimmy');
 };
-console.log(person.name + ' lahir pada tahun ' + person['birthday']);
+sayMyName();
 
-// Array
+function number(num) {
+    if (num >= 1) {
+        console.log('Positive');
+    } else if (num === 0) {
+        console.log('Neutral');
+    } else {
+        console.log('Negative');
+    }
+};
+number(-3);
+number(5);
+number(0);
 
-const usernames = [
-    'Yandy',
-    'Dimas',
-    'Mita'
-];
-console.log('Ada total ' + usernames.length + ' username');
+function plus(x, y) {
+    console.log(x + ' ditambah ' + y + ' sama dengan ' + (x + y));
+};
+plus(3, 5);
+plus(15, 27);
 
-const newUsername = 'Yawi';
-if (usernames.includes(newUsername)) {
-    console.log('Username sudah digunakan');
-} else {
-    console.log('Username tersedia');
-}
+// Return Statement
 
-const favoriteFood = [
-    'Martabak',
-    'Mie ayam',
-    'Pizza'
-];
-console.log('Makanana favoritku yang kedua adalah ' + favoriteFood[1]);
+function multiply(a, b) {
+    const c = a * b;
+    return c;
+};
+const hasil = multiply(15, 83);
+console.log(hasil);
+
+// Arrow Function
+
+function sayBye(name) {
+    console.log('Bye ' + name )
+};
+// Menjadi!!
+const sayByeArrow = name => {
+    console.log('Bye ' + name)
+};
+
+function add(x, y) {
+    return x + y;
+};
+// Menjadi!!
+const addArrow = (x, y) => {
+    return x + y;
+};
+
+const isAge = (name, age) => name + ' adalah umur ' + age;
+console.log(isAge('Jimmy', 14));
